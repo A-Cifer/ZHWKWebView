@@ -12,6 +12,11 @@
 		0411B3D420A423B400E55739 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0411B3D220A423B400E55739 /* Main.storyboard */; };
 		0411B3D620A423B400E55739 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0411B3D520A423B400E55739 /* Assets.xcassets */; };
 		0411B3D920A423B400E55739 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0411B3D720A423B400E55739 /* LaunchScreen.storyboard */; };
+		0411B3E220A424DB00E55739 /* ZHFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0411B3E020A424DB00E55739 /* ZHFileManager.swift */; };
+		0411B3E320A424DB00E55739 /* ZHWkWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0411B3E120A424DB00E55739 /* ZHWkWebViewController.swift */; };
+		0411B3E820A424EB00E55739 /* ZHHtml.zip in Resources */ = {isa = PBXBuildFile; fileRef = 0411B3E620A424EB00E55739 /* ZHHtml.zip */; };
+		0411B3E920A424EB00E55739 /* ZHHtmlMore.zip in Resources */ = {isa = PBXBuildFile; fileRef = 0411B3E720A424EB00E55739 /* ZHHtmlMore.zip */; };
+		F0180CB3258F6205B9345E83 /* Pods_ZHWKWebView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 707F4813F3E3756F7C38F831 /* Pods_ZHWKWebView.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,13 @@
 		0411B3D520A423B400E55739 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0411B3D820A423B400E55739 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0411B3DA20A423B400E55739 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0411B3E020A424DB00E55739 /* ZHFileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZHFileManager.swift; sourceTree = "<group>"; };
+		0411B3E120A424DB00E55739 /* ZHWkWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZHWkWebViewController.swift; sourceTree = "<group>"; };
+		0411B3E620A424EB00E55739 /* ZHHtml.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = ZHHtml.zip; sourceTree = "<group>"; };
+		0411B3E720A424EB00E55739 /* ZHHtmlMore.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = ZHHtmlMore.zip; sourceTree = "<group>"; };
+		625F34439BC843A96D6A16AD /* Pods-ZHWKWebView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZHWKWebView.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZHWKWebView/Pods-ZHWKWebView.release.xcconfig"; sourceTree = "<group>"; };
+		6522500B3434AD49F66AFF07 /* Pods-ZHWKWebView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZHWKWebView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZHWKWebView/Pods-ZHWKWebView.debug.xcconfig"; sourceTree = "<group>"; };
+		707F4813F3E3756F7C38F831 /* Pods_ZHWKWebView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZHWKWebView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0180CB3258F6205B9345E83 /* Pods_ZHWKWebView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +53,8 @@
 			children = (
 				0411B3CD20A423B400E55739 /* ZHWKWebView */,
 				0411B3CC20A423B400E55739 /* Products */,
+				945B4B46971059B9BF5B7B9D /* Pods */,
+				B2DF3429EAB541DD35B19129 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +69,51 @@
 		0411B3CD20A423B400E55739 /* ZHWKWebView */ = {
 			isa = PBXGroup;
 			children = (
+				0411B3E520A424EB00E55739 /* FileZip */,
+				0411B3E420A424DE00E55739 /* Other */,
 				0411B3CE20A423B400E55739 /* AppDelegate.swift */,
 				0411B3D020A423B400E55739 /* ViewController.swift */,
-				0411B3D220A423B400E55739 /* Main.storyboard */,
-				0411B3D520A423B400E55739 /* Assets.xcassets */,
-				0411B3D720A423B400E55739 /* LaunchScreen.storyboard */,
+				0411B3E020A424DB00E55739 /* ZHFileManager.swift */,
+				0411B3E120A424DB00E55739 /* ZHWkWebViewController.swift */,
 				0411B3DA20A423B400E55739 /* Info.plist */,
 			);
 			path = ZHWKWebView;
+			sourceTree = "<group>";
+		};
+		0411B3E420A424DE00E55739 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				0411B3D220A423B400E55739 /* Main.storyboard */,
+				0411B3D520A423B400E55739 /* Assets.xcassets */,
+				0411B3D720A423B400E55739 /* LaunchScreen.storyboard */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		0411B3E520A424EB00E55739 /* FileZip */ = {
+			isa = PBXGroup;
+			children = (
+				0411B3E620A424EB00E55739 /* ZHHtml.zip */,
+				0411B3E720A424EB00E55739 /* ZHHtmlMore.zip */,
+			);
+			path = FileZip;
+			sourceTree = "<group>";
+		};
+		945B4B46971059B9BF5B7B9D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6522500B3434AD49F66AFF07 /* Pods-ZHWKWebView.debug.xcconfig */,
+				625F34439BC843A96D6A16AD /* Pods-ZHWKWebView.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B2DF3429EAB541DD35B19129 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				707F4813F3E3756F7C38F831 /* Pods_ZHWKWebView.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +123,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0411B3DD20A423B400E55739 /* Build configuration list for PBXNativeTarget "ZHWKWebView" */;
 			buildPhases = (
+				13BE9C5819C7BC8D15EC75C4 /* [CP] Check Pods Manifest.lock */,
 				0411B3C720A423B400E55739 /* Sources */,
 				0411B3C820A423B400E55739 /* Frameworks */,
 				0411B3C920A423B400E55739 /* Resources */,
+				C4EAB832FBAAE1035B6F801D /* [CP] Embed Pods Frameworks */,
+				C052FFC216F289886F975101 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,19 +180,77 @@
 			files = (
 				0411B3D920A423B400E55739 /* LaunchScreen.storyboard in Resources */,
 				0411B3D620A423B400E55739 /* Assets.xcassets in Resources */,
+				0411B3E920A424EB00E55739 /* ZHHtmlMore.zip in Resources */,
+				0411B3E820A424EB00E55739 /* ZHHtml.zip in Resources */,
 				0411B3D420A423B400E55739 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		13BE9C5819C7BC8D15EC75C4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZHWKWebView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C052FFC216F289886F975101 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZHWKWebView/Pods-ZHWKWebView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4EAB832FBAAE1035B6F801D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ZHWKWebView/Pods-ZHWKWebView-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SSZipArchive/SSZipArchive.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SSZipArchive.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZHWKWebView/Pods-ZHWKWebView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0411B3C720A423B400E55739 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0411B3E220A424DB00E55739 /* ZHFileManager.swift in Sources */,
 				0411B3D120A423B400E55739 /* ViewController.swift in Sources */,
 				0411B3CF20A423B400E55739 /* AppDelegate.swift in Sources */,
+				0411B3E320A424DB00E55739 /* ZHWkWebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +385,7 @@
 		};
 		0411B3DE20A423B400E55739 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6522500B3434AD49F66AFF07 /* Pods-ZHWKWebView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -286,6 +400,7 @@
 		};
 		0411B3DF20A423B400E55739 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 625F34439BC843A96D6A16AD /* Pods-ZHWKWebView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
